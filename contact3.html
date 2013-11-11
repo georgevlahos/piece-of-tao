@@ -25,9 +25,15 @@
 	<script language="JavaScript">
 		function kneel()
 		{
-			document.getElementById('main_header').innerHTML="<h1>I have no time for your email puny human!</h1>";
-			document.getElementById('contact_form').innerHTML="";
-			
+			var inName = document.getElementById('inputName');
+			var inEmail = document.getElementById('inputEmail');
+			console.log('Validity of name in form is: ' + inName.validity.valid);
+			console.log('Validity of email in form is: ' + inEmail.validity.valid);
+			if(inName.validity.valid && inEmail.validity.valid )
+			{
+				document.getElementById('main_header').innerHTML="<h1>I have no time for your email puny human!</h1>";
+				document.getElementById('myForm').style.visibility="hidden";
+			}
 		}
 	</script>
   </head>
@@ -59,15 +65,15 @@
         <p class="lead">Use this form to vow your eternal loyalty to Zod.</p>
       </div>
 	  
-	  	<div id="contact_form">
-			<form method="post" enctype="text/plain">
+	  	<div>
+			<form method="post" enctype="text/plain" id='myForm'>
 				Name:<br>
-				<input type="text" name="name" placeholder="your name"  autofocus><br>
+				<input required type="text" name="name" placeholder="your name" id="inputName"/><br>
 				E-mail:<br>
-				<input type="email" name="mail" placeholder="your email"><br>
+				<input required type="email" name="mail" placeholder="your email" id="inputEmail"/><br>
 				Comment:<br>
-				<input type="text" name="comment" placeholder="vow your enternal loyalty to Zod" size="75"><br><br>
-				<input id="bigbutton" type="submit" onClick="kneel()" value="Kneel"/>
+				<input type="text" name="comment" placeholder="vow your enternal loyalty to Zod" size="60"/><br><br>
+				<input id="bigbutton" type="submit" onClick="kneel();return false" value="Kneel"/>
 			</form>
 		</div>
 	<br/><br/>
