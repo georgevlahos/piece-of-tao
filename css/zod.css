@@ -1,0 +1,21 @@
+
+body {
+	font: 14px 'Belgrano', sans-serif;
+	padding: 20px;
+	color:white;
+}
+h1 {
+	font: bold 28px 'Belgrano', sans-serif;
+}
+
+#grad
+{
+background: -webkit-linear-gradient(left, grey, black 99%); /* For Safari */
+background: -o-linear-gradient(right, grey, black 99%); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, grey, black 99%); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, grey, black 99%); /* Standard syntax */
+} 
+#contact_form
+{
+ padding: 20px;
+}

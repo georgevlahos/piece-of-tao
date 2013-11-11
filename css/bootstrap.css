@@ -5185,6 +5185,7 @@ a.list-group-item.active > .badge,
   margin-left: 3px;
 }
 
+/*  add the custom font to jumbotron class */
 .jumbotron {
   padding: 30px;
   margin-bottom: 30px;
@@ -5198,6 +5199,7 @@ a.list-group-item.active > .badge,
 .jumbotron h1 {
   line-height: 1;
   color: inherit;
+/*  font-family: 'Belgrano', sans-serif; */
 }
 
 .jumbotron p {
@@ -5219,6 +5221,7 @@ a.list-group-item.active > .badge,
   }
   .jumbotron h1 {
     font-size: 63px;
+	/* font-family: 'Belgrano', sans-serif; */
   }
 }
 
