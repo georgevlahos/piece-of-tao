@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Contact page for General Zod.">
     <meta name="author" content="George Vlahos">
     <link rel="shortcut icon" href="images/favicon.png">
 
@@ -30,8 +30,13 @@
 			console.log('Validity of email in form is: ' + inEmail.validity.valid);
 			if(inName.validity.valid && inEmail.validity.valid )
 			{
-				document.getElementById('main_header').innerHTML="<h1>I have no time for your email puny human!</h1>";
-				document.getElementById('myForm').style.visibility="hidden";
+				// document.getElementById('main_header').innerHTML="<h1>I have no time for your email puny human!</h1>";
+				document.getElementById('main_header').innerHTML="<div class='div-with-bg'>I have no time for your email puny human!</div>";
+				document.getElementsByTagName('form').item(0).style.visibility="hidden";
+			}
+			else
+			{
+				submitform();
 			}
 		}
 	</script>
@@ -63,9 +68,9 @@
         <h1>Contact Zod</h1>
         <p class="lead">Use this form to vow your eternal loyalty to Zod.</p>
       </div>
-	  
+	  <br/>
 	  	<div>
-			<form method="post" enctype="text/plain" id='myForm'>
+			<form method="post" enctype="text/plain" >
 				Name:<br>
 				<input required type="text" name="name" placeholder="your name" id="inputName"/><br>
 				E-mail:<br>

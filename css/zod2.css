@@ -11,40 +11,14 @@
   background:-moz-linear-gradient(right, grey, black 50%); /* For Firefox 3.6 to 15 */
   background:linear-gradient(to right, grey, black 50%); /* Standard syntax */
 }
-
-.jumbotron h1 {
-  line-height:1;
-  font-family:'Belgrano',sans-serif;
-}
-
-@media screen and (min-width: 768px) {
-  .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .jumbotron h1 {
-    font-size:63px;
-  }
-}
-
 .starter-template {
   padding: 40px 15px;
   text-align: center;
   color:white;
-  font-family:'Belgrano',sans-serif;
   background:-webkit-linear-gradient(left, grey , black 50%); /* For Safari */
   background:-o-linear-gradient(right, grey, black 50%); /* For Opera 11.1 to 12.0 */
   background:-moz-linear-gradient(right, grey, black 50%); /* For Firefox 3.6 to 15 */
   background:linear-gradient(to right, grey , black 50-%); /* Standard syntax */
-}
-
-.starter-template h1,p {
-  font-family:'Belgrano',sans-serif;
-}
-
-#contact_form
-{
-	font-family:'Belgrano',sans-serif;
 }
 
 input#bigbutton {
@@ -77,3 +51,11 @@ input#bigbutton:hover, input#bigbutton:focus {
 	box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
 }
 
+.div-with-bg
+{
+	background-image:url('../images/zod.jpg');
+	background-repeat:no-repeat;
+	background-position:center; 
+    font-size:43px;
+	height:494px;
+}
